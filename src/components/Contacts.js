@@ -25,16 +25,16 @@ class Contacts extends Component {
       }
     ]
   };
-
+  he;
   render() {
     // de structure
     const { contacts } = this.state;
     return (
-      <div>
+      <React.Fragment>
         {contacts.map(contact => (
           <Contact key={contact.id} contact={contact} />
         ))}
-      </div>
+      </React.Fragment>
     );
   }
 }
