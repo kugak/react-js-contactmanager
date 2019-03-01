@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Header from "./components/layouts/Header";
 import About from "./components/pages/About";
+import NotFound from "./components/pages/NotFoud";
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
                 <Route exact path="/" component={Contacts} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/contact/add" component={AddContact} />
+                <Route exact component={NotFound} />
               </Switch>
             </div>
           </div>
