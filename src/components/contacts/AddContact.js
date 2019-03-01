@@ -45,6 +45,9 @@ class AddContact extends Component {
       phone: "",
       errors: {}
     });
+
+    // redirect to contacts page
+    this.props.history.push("/");
   };
 
   onChange = e => {
